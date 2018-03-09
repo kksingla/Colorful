@@ -87,7 +87,7 @@ Colorful will handle saving and loading your theme preferences for you.
 
 Colorful has a inbuilt color chooser dialog that will return a `ThemeColor` object you can pass directly to Colorful
 ```java
-public class MainActivity extends CActivity {
+public class MainActivity extends ColorfulActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
