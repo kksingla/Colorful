@@ -25,7 +25,7 @@ allprojects {
 Add Colorful as a dependency to your `build.gradle`
 ```groovy
 dependencies {
-    compile 'com.github.garretyoder:Colorful:1.1'
+    compile 'com.github.garretyoder:Colorful:1.4'
 }
 ```
 
@@ -48,7 +48,9 @@ public class MainActivity extends CActivity
 
 Alternatively you can call the following method after `super.onCreate(savedInstanceState);` and before `setContentView();`
 ```java
-Colorful.applyTheme(Activity activity);
+Colorful.applyTheme(Activity activity, true); // it will not override the base theme.(Recommeded)
+// or use
+Colorful.applyTheme(Activity activity); // it also override the base theme and it remove/hide the ActionBar also
 ```
 
 You can also use `Colorful.applyTheme(Activity activity, Boolean overrideBase);` where `overrideBase` defines whether you want `Colorful` to override your base theme as well, or simply set the primary and accent colors. This allows you to use Colorful with your own pre-defined style, but *will* break light/dark functionality.
