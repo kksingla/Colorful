@@ -35,7 +35,7 @@ public class Colorful {
     }
 
     public static void applyTheme(@NonNull Activity activity) {
-        applyTheme(activity, true);
+        applyTheme(activity, false);
     }
 
     public static void applyTheme(@NonNull Activity activity, boolean overrideBase) {
